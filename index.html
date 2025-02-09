@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="container">
-    
-    <h1>Weather App</h1>
-    <input type="text" id="inputCity" placeholder="Enter city">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="wheatherInfo"></div>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="weatherInfo" class="weather-box">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="weatherDescription"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+            <p id="weatherQuote"></p> 
+            <p id="sunrise"></p> 
+            <p id="sunset"></p> 
+            <div id="weatherIconContainer"></div> 
+        </div>
+        <div id="alertMessage"></div> 
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
